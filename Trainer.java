@@ -18,6 +18,19 @@ public class Trainer {
         }
     }
 
+    public void removePokemon(Pokemon p){
+        if (p != null){
+            pokemons.remove(p);
+        } 
+        else{
+            throw new IllegalArgumentException("Pokemon can't be null");
+        }
+    }
+
+    public String getName(){
+        return name; 
+    }
+
     public void showTrainerInfo(){
         System.out.println("Trainer name: " + name);
         System.out.println("Pokemons: ");
@@ -43,6 +56,10 @@ public class Trainer {
         else {
             System.out.println("Invalid index. Please provide a valid index between 0 and " + (pokemons.size() - 1));
         }
+    }
+
+    public List<Pokemon> getPokemons(){
+        return pokemons;
     }
 
     @Override
