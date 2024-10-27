@@ -1,3 +1,5 @@
+package src.org.pokemon_world;
+
 public class PokemonTest {
     public static void main(String[] args) {
 

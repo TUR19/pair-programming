@@ -1,3 +1,5 @@
+package src.org.pokemon_world;
+
 public class Pokemon {
     private String name;
     private Type type;
@@ -47,7 +49,7 @@ public class Pokemon {
         charmander = new Pokemon("Charmander", Type.FIRE);
         Pokemon squirtle;
         squirtle = new Pokemon("Squirtle", Type.WATER);
-        Pokemon ekans;;
+        Pokemon ekans;
         ekans = new Pokemon("Ekans", Type.POISON);
 
         System.out.println(charmander);

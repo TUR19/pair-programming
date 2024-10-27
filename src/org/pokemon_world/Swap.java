@@ -1,3 +1,4 @@
+package src.org.pokemon_world;
 import java.util.Date;
 
 public class Swap{
@@ -46,22 +47,22 @@ public class Swap{
     }
 
     public static void main(String[] args){
-        Trainer Ivan = new Trainer("Ivan");
-        Trainer Alexandr = new Trainer("Alexandr");
+        Trainer trIvan = new Trainer("Ivan");
+        Trainer trAlexandr = new Trainer("Alexandr");
 
         Pokemon charmander = new Pokemon("Charmander", Type.FIRE);
         Pokemon squirtle = new Pokemon("Squirtle", Type.WATER);
 
-        Ivan.addPokemon(charmander);
-        Alexandr.addPokemon(squirtle);
+        trIvan.addPokemon(charmander);
+        trAlexandr.addPokemon(squirtle);
 
-        Ivan.showTrainerInfo();
-        Alexandr.showTrainerInfo();
+        trIvan.showTrainerInfo();
+        trAlexandr.showTrainerInfo();
 
-        Swap swap = new Swap(Ivan, charmander, Alexandr, squirtle, "swap001");
+        Swap swap = new Swap(trIvan, charmander, trAlexandr, squirtle, "swap001");
         swap.execute();
 
-        Ivan.showTrainerInfo();
-        Alexandr.showTrainerInfo();
+        trIvan.showTrainerInfo();
+        trAlexandr.showTrainerInfo();
     }
 }
